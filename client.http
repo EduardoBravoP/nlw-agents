@@ -26,7 +26,6 @@ GET {{baseUrl}}/rooms
 ###
 
 @roomId = {{createRoom.response.body.$.roomId}}
-
 ###
 
 # Get Room questions
@@ -36,9 +35,9 @@ GET {{baseUrl}}/rooms/{{roomId}}/questions
 ###
 # Create Question
 # @name createQuestion
-POST {{baseUrl}}/rooms/{{roomId}}/questions
+POST {{baseUrl}}/rooms/45dffe54-9c7f-47c1-ac64-3e9bee4787af/questions
 Content-Type: application/json
 
 {
-  "question": "Qual é a capital do Brasil?"
+  "question": "Qual é a capital do brasil?"
 }
